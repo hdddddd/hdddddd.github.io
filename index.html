@@ -142,6 +142,64 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-初入vue" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/26/初入vue/">初入Vue</a>
+    </h1>
+  
+
+        <a href="/2018/02/26/初入vue/" class="archive-article-date">
+  	<time datetime="2018-02-26T03:03:18.918Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-26</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&ensp;&ensp;&ensp;&ensp;刚开始接触vue，遇到一个不知道什么问题的问题，百度有人说是js的引入顺序问题，但是我是我引入顺序是正确的，还是没有得到答案。<br>接下来说说问题：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;../vueBasic/vue.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;body id=&quot;example&quot;&gt;</span><br><span class="line">	&lt;ul &gt;</span><br><span class="line">		&lt;li v-for=&quot;item in items&quot;&gt; &#123;&#123;item.name&#125;&#125; &lt;/li&gt;</span><br><span class="line">	&lt;/ul&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">var demo = new Vue(&#123;</span><br><span class="line">  el: &apos;#example&apos;,</span><br><span class="line">  data: &#123;</span><br><span class="line">    items: [</span><br><span class="line">    	&#123;</span><br><span class="line">    		name:&apos;kuaiche&apos;,</span><br><span class="line">    		tag:1</span><br><span class="line">    	&#125;,</span><br><span class="line">    	&#123;</span><br><span class="line">    		name:&apos;chuzuche&apos;,</span><br><span class="line">    		tag:3</span><br><span class="line">    	&#125;,																	</span><br><span class="line">    	&#123;</span><br><span class="line">    		name:&apos;shunfengche&apos;,</span><br><span class="line">    		tag:2</span><br><span class="line">    	&#125;,</span><br><span class="line">    	&#123;</span><br><span class="line">    		name:&apos;zhuangche&apos;,</span><br><span class="line">    		tag:0</span><br><span class="line">    	&#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>&ensp;&ensp;&ensp;&ensp;这是所有的代码，运行的时候会发现出现的结果并不是期待的列表顺序结果而是如图所示：</p>
+<p><img src="E:/资料整合/html+css学习/vueBasic/vueImg1.png" alt="image"></p>
+<p>&ensp;&ensp;&ensp;&ensp;学习vue遇到的第一个坑，目前找到的解决办法是在ul标签外面加一层div，并且设置id即可正常显示，但是现在我不知道为什么。等后面知道了原理再来解释。</p>
+<p>修改后的html代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div id=&quot;example&quot;&gt;</span><br><span class="line">		&lt;ul &gt;</span><br><span class="line">			&lt;li v-for=&quot;item in items&quot;&gt; &#123;&#123;item.name&#125;&#125; &lt;/li&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/02/26/初入vue/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-代码重构" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -794,19 +852,23 @@ public void getBean() throws Exception{
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">shu</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)">spring</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)">代码重构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">Vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">shu</a>
               </li>
             
             <div class="clearfix"></div>
