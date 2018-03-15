@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>第一个md文件 | Hedy</title>
+  <title>计算机网络（数据链路层） | Hedy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is a h112var a = 0377;alert(a);">
+  <meta name="description" content="链路： 一个结点到相邻结点的一段物理线路，也被称为物理链路； 数据链路：是物理链路加上一些必要的通信协议，也被称为逻辑链路； 梳理链路层的三个基本问题：(1) 封装成帧；(2) 透明传输；(3) 差错检测；">
+<meta name="keywords" content="计算机网络">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一个md文件">
-<meta property="og:url" content="http://yoursite.com/2017/11/28/helloworld/index.html">
+<meta property="og:title" content="计算机网络（数据链路层）">
+<meta property="og:url" content="http://yoursite.com/2018/03/15/计算机网络（数据链路层）/index.html">
 <meta property="og:site_name" content="Hedy">
-<meta property="og:description" content="This is a h112var a = 0377;alert(a);">
+<meta property="og:description" content="链路： 一个结点到相邻结点的一段物理线路，也被称为物理链路； 数据链路：是物理链路加上一些必要的通信协议，也被称为逻辑链路； 梳理链路层的三个基本问题：(1) 封装成帧；(2) 透明传输；(3) 差错检测；">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2016-12-22T12:03:05.155Z">
+<meta property="og:updated_time" content="2018-03-15T06:55:24.100Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一个md文件">
-<meta name="twitter:description" content="This is a h112var a = 0377;alert(a);">
+<meta name="twitter:title" content="计算机网络（数据链路层）">
+<meta name="twitter:description" content="链路： 一个结点到相邻结点的一段物理线路，也被称为物理链路； 数据链路：是物理链路加上一些必要的通信协议，也被称为逻辑链路； 梳理链路层的三个基本问题：(1) 封装成帧；(2) 透明传输；(3) 差错检测；">
   
     <link rel="alternative" href="/atom.xml" title="Hedy" type="application/atom+xml">
   
@@ -144,25 +145,38 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-helloworld" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-计算机网络（数据链路层）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      第一个md文件
+      计算机网络（数据链路层）
     </h1>
   
 
-        <a href="/2017/11/28/helloworld/" class="archive-article-date">
-  	<time datetime="2017-11-28T09:34:02.811Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-28</time>
+        <a href="/2018/03/15/计算机网络（数据链路层）/" class="archive-article-date">
+  	<time datetime="2018-03-15T06:51:40.337Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
 </a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="This-is-a-h1"><a href="#This-is-a-h1" class="headerlink" title="This is a h1"></a>This is a h1</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var a = 0377;</span><br><span class="line">alert(a);</span><br></pre></td></tr></table></figure>
+        <ol>
+<li>链路： 一个结点到相邻结点的一段物理线路，也被称为物理链路；</li>
+<li>数据链路：是物理链路加上一些必要的通信协议，也被称为逻辑链路；</li>
+<li>梳理链路层的三个基本问题：<br><br>(1) 封装成帧；<br>(2) 透明传输；<br>(3) 差错检测；<a id="more"></a></li>
+<li>点对点协议（ppp）:<br><br>(1) 组成：<br><pre><code>①：将ip数据报封装到串行链路的方法；&lt;br&gt;
+②：用来建立、配置和测试链路连接的链路控制协议LCP；&lt;br&gt;
+③：一套网络控制协议NCP;
+</code></pre></li>
+<li>共享信道技术：<br><br> (1) 静态划分信道：用户只要分配到信道就不会和其他用户发生冲突。<br><br> (2) 动态媒体接入控制(多点接入):信道不在用户通信时固定分配，分配方式以下两种：①：随机接入：用户可随机发送信息，会产生碰撞（冲突），所以必须有解决碰撞（冲突）的网络协议；②：受控接入：用户不能随机的发送信息而必须服从一定的控制。</li>
+<li>CSMA/CD协议要点：<br> (1) 多点接入：计算机以多点接入的方式连接在一根总线上。协议的实质是“载波监听” 和 “碰撞检测”；<br><br> (2) 载波监听：即检测信道，不管发送前还是发送中，每个站都必须不停的检测信道。<br> 【注】工作过程：①:先听后发；②：边发边听；③：冲突回退；④：候时重发<br></li>
+<li>使用网桥的优缺点：<br> (1) 优点：<br><br> ①：过滤通信量，增大吞吐量；<br><br> ②：扩大了物理范围；<br><br> ③：提高可靠性；<br><br> ④：可互连不同物理层，不同MAC子层和不同速率。<br><br> (2) 缺点：<br><br> ①：增加了时延；<br><br> ②：在MAC子层没有流量控制功能；<br><br> ③：网桥只适合用户数不多和通信量不太大的以太网，这就是所谓的广播风暴。<br></li>
+<li>循环冗余检验CRC是一种检错方法，而帧检验序列FCS是添加在数据后面的冗余码。</li>
+</ol>
+
       
 
       
@@ -191,6 +205,11 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机网络/">计算机网络</a></li></ul>
+	</div>
+
       
 
       
@@ -241,7 +260,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/11/28/helloworld/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/03/15/计算机网络（数据链路层）/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -255,18 +274,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/11/28/softProject/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/03/15/计算机网络(物理层)/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          软件工程
+          计算机网络（物理层）
         
       </div>
     </a>
   
   
-    <a href="/2017/11/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2018/03/15/计算机网络（网络层）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">计算机网络（网络层）</div>
       <i class="icon-circle-right"></i>
     </a>
   
