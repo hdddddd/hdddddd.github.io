@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>springIoc | Hedy</title>
+  <title>TCP/IP | Hedy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简易spring的IOC实现 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;首先需要理解一下什么叫做ioc（inversion of Controller），简单来说就是控制反转。它不是一门像js这样的技术，我们可以把它看做一种设计模式。为什么会出现IOC呢？&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;传统的程序会导致类与类之间高耦合，难以测试，于是就把创建和查找依赖对象的控制权都交给">
-<meta name="keywords" content="spring">
+  <meta name="description" content="TCP/IP协议族TCP/IP是互联网相关的各类协议族的总称 TCP/IP的分层管理1. 4层：应用层、传输层、网络层、数据链路层； 2. 各层作用：     (1) 应用层：决定了向用户提供应用服务时通信的活动；          TCP/IP协议族中预存的应用服务：FTP(文件传输协议)、DNS(域名系统)、HTTP      (2) 传输层：对应用层提供处于网络连接中的两台计算机之间的数据传">
+<meta name="keywords" content="图解HTTP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="springIoc">
-<meta property="og:url" content="http://yoursite.com/2017/11/28/springIOC/index.html">
+<meta property="og:title" content="TCP&#x2F;IP">
+<meta property="og:url" content="http://yoursite.com/2018/08/20/TCP.IP/index.html">
 <meta property="og:site_name" content="Hedy">
-<meta property="og:description" content="简易spring的IOC实现 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;首先需要理解一下什么叫做ioc（inversion of Controller），简单来说就是控制反转。它不是一门像js这样的技术，我们可以把它看做一种设计模式。为什么会出现IOC呢？&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;传统的程序会导致类与类之间高耦合，难以测试，于是就把创建和查找依赖对象的控制权都交给">
+<meta property="og:description" content="TCP/IP协议族TCP/IP是互联网相关的各类协议族的总称 TCP/IP的分层管理1. 4层：应用层、传输层、网络层、数据链路层； 2. 各层作用：     (1) 应用层：决定了向用户提供应用服务时通信的活动；          TCP/IP协议族中预存的应用服务：FTP(文件传输协议)、DNS(域名系统)、HTTP      (2) 传输层：对应用层提供处于网络连接中的两台计算机之间的数据传">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-15T07:00:26.430Z">
+<meta property="og:updated_time" content="2018-08-20T09:28:53.235Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="springIoc">
-<meta name="twitter:description" content="简易spring的IOC实现 &amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;首先需要理解一下什么叫做ioc（inversion of Controller），简单来说就是控制反转。它不是一门像js这样的技术，我们可以把它看做一种设计模式。为什么会出现IOC呢？&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;传统的程序会导致类与类之间高耦合，难以测试，于是就把创建和查找依赖对象的控制权都交给">
+<meta name="twitter:title" content="TCP&#x2F;IP">
+<meta name="twitter:description" content="TCP/IP协议族TCP/IP是互联网相关的各类协议族的总称 TCP/IP的分层管理1. 4层：应用层、传输层、网络层、数据链路层； 2. 各层作用：     (1) 应用层：决定了向用户提供应用服务时通信的活动；          TCP/IP协议族中预存的应用服务：FTP(文件传输协议)、DNS(域名系统)、HTTP      (2) 传输层：对应用层提供处于网络连接中的两台计算机之间的数据传">
   
     <link rel="alternative" href="/atom.xml" title="Hedy" type="application/atom+xml">
   
@@ -145,137 +145,67 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-springIOC" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-TCP.IP" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      springIoc
+      TCP/IP
     </h1>
   
 
-        <a href="/2017/11/28/springIOC/" class="archive-article-date">
-  	<time datetime="2017-11-28T09:34:02.825Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-28</time>
+        <a href="/2018/08/20/TCP.IP/" class="archive-article-date">
+  	<time datetime="2018-08-20T09:23:07.698Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-20</time>
 </a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简易spring的IOC实现"><a href="#简易spring的IOC实现" class="headerlink" title="   简易spring的IOC实现"></a><font color="#87CEFA">   简易spring的IOC实现</font></h2><hr>
-<p>&ensp;&ensp;&ensp;&ensp;首先需要理解一下什么叫做ioc（inversion of Controller），简单来说就是控制反转。它不是一门像js这样的技术，我们可以把它看做一种设计模式。为什么会出现IOC呢？<br>&ensp;&ensp;&ensp;&ensp;传统的程序会导致类与类之间高耦合，难以测试，于是就把创建和查找依赖对象的控制权都交给一个容器，由容器来进行注入组合对象。这里可以把容器比作一个菜篮，以前没有菜篮的时候去买白菜的时候就特别不方便，后来有了篮子，不仅装东西方便，而且还送货上门，你只需要说一声，我需要白菜，直接送到家门口。spring就相当于这个篮子。它体现了一个法则：“不管怎样都不要来找我们，我们有需要的时候回来找你的”。接下来我就把一个简易的spring的IOC展示出来。<br><a id="more"></a></p>
-<hr>
-<h2 id="主要步骤"><a href="#主要步骤" class="headerlink" title="主要步骤"></a><font color="#87CEFA">主要步骤</font></h2><ul>
-<li>写一个IOC的类，用来解析配置文件，当然配置文件有很多种，但是这里我就用了一个xml的配置文件。这里面要用到反射的知识。</li>
-<li>遍历xml文件中的所有的bean标签</li>
-<li>获取bean标签里面的id和class属性，加载class对应的类，并创建bean</li>
-<li>获取property标签的属性值，并填充到bean中</li>
-<li>将bean注册到bean容器中</li>
-</ul>
-<h2 id="主要文件"><a href="#主要文件" class="headerlink" title="主要文件"></a><font color="#87CEFA">主要文件</font></h2><ul>
-<li>首先有一个xml文件，我给它取名为springIoc</li>
-<li>然后是读取xml文件的<table><tr><td bgcolor="#76EEC6">MySimpleIOC文件</td></tr></table></li>
-<li>然后有实体类，也就是model，我这里用了Student和studentClass</li>
-<li>最后就是一个测试类（我用的是junit进行的测试） </li>
-</ul>
-<h2 id="关键代码展示-code"><a href="#关键代码展示-code" class="headerlink" title="关键代码展示[^code]"></a><font color="#87CEFA">关键代码展示[^code]</font></h2><p>&ensp;&ensp;&ensp;&ensp;<table><tr><td bgcolor="#76EEC6">这里主要是读取xml文件的整个过程，也是整个实现IOC的关键，至于其他的就不做过多的阐述</td></tr></table></p>
-<pre><code>public MySimpleIOC(String location) throws Exception{
+        <h3 id="TCP-IP协议族"><a href="#TCP-IP协议族" class="headerlink" title="TCP/IP协议族"></a>TCP/IP协议族</h3><pre><code>TCP/IP是互联网相关的各类协议族的总称
+</code></pre><h3 id="TCP-IP的分层管理"><a href="#TCP-IP的分层管理" class="headerlink" title="TCP/IP的分层管理"></a>TCP/IP的分层管理</h3><pre><code>1. 4层：应用层、传输层、网络层、数据链路层；
+2. 各层作用：
+    (1) 应用层：决定了向用户提供应用服务时通信的活动；
 
-    loadBeans(location);
-}
+        TCP/IP协议族中预存的应用服务：FTP(文件传输协议)、DNS(域名系统)、HTTP
 
-private void loadBeans(String location) throws Exception {
-    //加载xml配置文件
-    InputStream inputStream = new FileInputStream(location);
-    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-    DocumentBuilder docBuilder = factory.newDocumentBuilder();
-    Document doc = docBuilder.parse(inputStream);
-    Element root =  doc.getDocumentElement();
-    NodeList nodes = ((Node) root).getChildNodes();
+    (2) 传输层：对应用层提供处于网络连接中的两台计算机之间的数据传输；
 
-    for(int i = 0;i &lt; nodes.getLength();i++){
-        Node node = (Node) nodes.item(i);
-        if(node instanceof Element){
-            Element element = (Element) node;
-            String id = element.getAttribute(&quot;id&quot;);
-            String className = element.getAttribute(&quot;class&quot;);
+        协议：TCP(传输控制协议) 和 UDP(用户数据报协议)
 
-            //加载beanClass
-            Class beanClass = null;
-            try{
-                beanClass = Class.forName(className);
-            }catch(ClassNotFoundException e){
-                e.printStackTrace();
-                return;
-            }
+    (3) 网络层：处理在网络上流动的数据包。数据包是传输的最小数据单位。该层规定了通过怎样的路径到达对方计算机，并把数据包传送给对方。
+</code></pre><a id="more"></a>         
+<pre><code>(4) 链路层（网络接口层）：处理连接网络的硬件部分。硬件范畴均在链路层的作用范围内。
+</code></pre><h3 id="TCP-IP通信传输流"><a href="#TCP-IP通信传输流" class="headerlink" title="TCP/IP通信传输流"></a>TCP/IP通信传输流</h3><pre><code>1. 利用TCP/IP协议族进行网络通信时，会通过分层顺序进行通信。发送端从应用层往下，接收端则往应用层上走。
 
-            //创建bean
-            Object bean = beanClass.newInstance();
+2. 发送端在层与层之间传输数据时，每经过一层必被打上一个该层所属的首部信息，反之，接收端在层与层传输数据时，每经过一层就把对应的首部去掉。
 
-            //遍历&lt;property&gt;标签
-            NodeList propertyNodes = element.getElementsByTagName(&quot;property&quot;);
-            for(int j = 0;j &lt; propertyNodes.getLength();j++){
-                Node properNode  = (Node) propertyNodes.item(j);
-                if(properNode instanceof Element){
-                    Element propertyElement = (Element) properNode;
-                    String name = propertyElement.getAttribute(&quot;name&quot;);
-                    String value = propertyElement.getAttribute(&quot;value&quot;);
+3. 封装：把数据信息包装起来的做法。
+</code></pre><h3 id="与HTTP关系密切的协议：IP、TCP、DNS"><a href="#与HTTP关系密切的协议：IP、TCP、DNS" class="headerlink" title="与HTTP关系密切的协议：IP、TCP、DNS"></a>与HTTP关系密切的协议：IP、TCP、DNS</h3><pre><code>1. 负责传输的IP协议（网际协议）[位于网络层]
+    (1) 作用：把各种数据包传送给对方。
+    (2) 两个条件确保发送：IP地址和MAC地址。
 
-                    //利用反射将bean相关字段访问权限设为可访问
-                    Field declaredField = bean.getClass().getDeclaredField(name);
-                    String tString = declaredField.getType().getName();
+        IP地址指明了节点被分配到的地址，MAC地址是指网卡所属的固定地址。IP地址可和MAC地址进行配对，其中IP地址可变换，但MAC地址基本不会更改。
 
-                    declaredField.setAccessible(true);
+2. 确保可靠的TCP协议[位于传输层]
+    (1) 提供可靠的字节流服务
+    (2) 字节流服务：为了方便传输，将大块数据分割成以报文段位单位的数据包进行管理，还能够确认数据是否送达到对方。
+    (3) 确保数据到达目标采用三次握手策略，握手过程中使用TCP标志---SYN和ACK.
 
-                    if(value != null &amp;&amp; value.length() &gt; 0){
-                        if(tString.equals(&quot;java.lang.Integer&quot;)){
-                            Integer temp = Integer.parseInt(value);
-                            declaredField.set(bean, temp);
-                        }else{
-                            //将属性填充到相关字段中
-                            declaredField.set(bean, value);
-                        }
-                    }else{
-                        String ref = propertyElement.getAttribute(&quot;ref&quot;);
-                        if(ref == null || ref.length() == 0){
-                            throw new IllegalArgumentException(&quot;ref config error&quot;);
-                        }
+        第一次握手：发送端发送一个带SYN标志的数据包给接收端；
 
-                        //将引用填充到相关字段中
-                        declaredField.set(bean, getBean(ref));
-                    }
+        第二次握手：接收端收到发送端发过来的数据包后，回传一个带有SYN/ACK标志的数据包传达确认信息；
 
-                    //将bean注册到bean容器中
-                    registerBean(id,bean);
-                }
-            }
-        }
-    }
-}
+        第三次握手：发送端收到接收端回传的数据后，在回传一个带ACK标志的数据包。此时，完成连接过程。
 
-private void registerBean(String id, Object bean) {
-    beanMap.put(id, bean);
-}
+3. DNS服务[位于应用层]
+    提供通过域名查找IP地址或逆向从IP地址反查域名的服务
 
-public Object getBean(String name) {
-    Object bean = beanMap.get(name);
-    if(bean == null){
-        throw new IllegalArgumentException(&quot;there is no bean with name &quot; + name);
-    }
-    return bean;
-}
-</code></pre><p>&ensp;&ensp;&ensp;&ensp;刚刚说了关键就是上面那个步骤，下面我将测试类代码也展示一下。</p>
-<pre><code> @Test
-public void getBean() throws Exception{
-    String location = MySimpleIOC.class.getClassLoader().getResource(&quot;springIoc.xml&quot;).getFile();
-    String temp = location.substring(1, location.length());
-    MySimpleIOC ioc = new MySimpleIOC(temp);
-    StudentClass studentClass = (StudentClass) ioc.getBean(&quot;studentClass&quot;);
-    System.out.println(studentClass + &quot;,&quot; +studentClass.getCode() +&quot;,&quot;+ studentClass.getMark());
-    Student student = (Student) ioc.getBean(&quot;student&quot;);
-    System.out.println(student+&quot;,&quot; +student.getName()+&quot;,&quot;+student.getStudentClass().getCode());
-}
+4. URI和URL
+    (1) 统一资源标识符（URI[Uniform Resource Identifier]）:由某个协议方案表示的资源的定位标识符。URL表示资源的地点，因此URL是URI的子集
+
+        协议方案：指访问资源使用的协议类型的名称。如使用HTTP协议，协议方案就是http。
 </code></pre>
       
 
@@ -307,7 +237,7 @@ public void getBean() throws Exception{
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring/">spring</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图解HTTP/">图解HTTP</a></li></ul>
 	</div>
 
       
@@ -360,7 +290,7 @@ public void getBean() throws Exception{
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/11/28/springIOC/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/08/20/TCP.IP/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -374,18 +304,18 @@ public void getBean() throws Exception{
   
 <nav id="article-nav">
   
-    <a href="/2018/01/24/html5基础知识/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/08/20/生成器Generators/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          html5基础知识
+          生成器Generators
         
       </div>
     </a>
   
   
-    <a href="/2017/11/28/softProject/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">软件工程</div>
+    <a href="/2018/08/20/HTTP/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTTP</div>
       <i class="icon-circle-right"></i>
     </a>
   

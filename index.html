@@ -142,6 +142,198 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-生成器Generators" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/20/生成器Generators/">生成器Generators</a>
+    </h1>
+  
+
+        <a href="/2018/08/20/生成器Generators/" class="archive-article-date">
+  	<time datetime="2018-08-20T09:23:25.746Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-20</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="生成器函数基本概念"><a href="#生成器函数基本概念" class="headerlink" title="生成器函数基本概念"></a>生成器函数基本概念</h3><pre><code>概念：它是ES6提供的一种解决异步编程解决方案。
+区别（与普通函数）：&lt;/br&gt;
+    1. 普通函数是通过function声明，生成器函数是用function*声明。
+    2. 生成器函数中没有return，但是有一个类似return功能的语法：关键字yield,在普通函数中，return只能一次，而在生成器函数中，yield可以有多次，在生成器执行过程中遇到yield表达式会立即暂停，后续可恢复执行状态。
+</code></pre><h3 id="生成器函数实例"><a href="#生成器函数实例" class="headerlink" title="生成器函数实例"></a>生成器函数实例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function* quips(name)&#123;</span><br><span class="line">	yield &quot;你好&quot; + name + &quot;!&quot;;</span><br><span class="line">	yield &quot;希望你能喜欢这篇es6的译文&quot;;</span><br><span class="line">	if(name.startsWith(&quot;X&quot;))&#123;</span><br><span class="line">		yield &quot;你的名字&quot; + name + &quot;   首字母是X，这很酷！&quot;;</span><br><span class="line">	&#125;</span><br><span class="line">	yield &quot;我们下次再见！&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2018/08/20/生成器Generators/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/深入浅出ES6/">深入浅出ES6</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/20/生成器Generators/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-TCP.IP" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/20/TCP.IP/">TCP/IP</a>
+    </h1>
+  
+
+        <a href="/2018/08/20/TCP.IP/" class="archive-article-date">
+  	<time datetime="2018-08-20T09:23:07.698Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-20</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="TCP-IP协议族"><a href="#TCP-IP协议族" class="headerlink" title="TCP/IP协议族"></a>TCP/IP协议族</h3><pre><code>TCP/IP是互联网相关的各类协议族的总称
+</code></pre><h3 id="TCP-IP的分层管理"><a href="#TCP-IP的分层管理" class="headerlink" title="TCP/IP的分层管理"></a>TCP/IP的分层管理</h3><pre><code>1. 4层：应用层、传输层、网络层、数据链路层；
+2. 各层作用：
+    (1) 应用层：决定了向用户提供应用服务时通信的活动；
+
+        TCP/IP协议族中预存的应用服务：FTP(文件传输协议)、DNS(域名系统)、HTTP
+
+    (2) 传输层：对应用层提供处于网络连接中的两台计算机之间的数据传输；
+
+        协议：TCP(传输控制协议) 和 UDP(用户数据报协议)
+
+    (3) 网络层：处理在网络上流动的数据包。数据包是传输的最小数据单位。该层规定了通过怎样的路径到达对方计算机，并把数据包传送给对方。
+</code></pre>
+        
+          <a class="article-more-a" href="/2018/08/20/TCP.IP/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图解HTTP/">图解HTTP</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/20/TCP.IP/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-HTTP" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/20/HTTP/">HTTP</a>
+    </h1>
+  
+
+        <a href="/2018/08/20/HTTP/" class="archive-article-date">
+  	<time datetime="2018-08-20T09:22:55.242Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-20</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="HTTP不保存状态的协议"><a href="#HTTP不保存状态的协议" class="headerlink" title="HTTP不保存状态的协议"></a>HTTP不保存状态的协议</h3><pre><code>1. HTTP是一种无状态协议，对发送过的请求或相应不做持久化的处理。
+
+2. HTTP/1.1虽然是无状态协议，利用Cookie实现了保持状态的功能。
+</code></pre><h3 id="HTTP中的方法"><a href="#HTTP中的方法" class="headerlink" title="HTTP中的方法"></a>HTTP中的方法</h3><pre><code>1. GET：获取资源，请求访问已被URI识别的资源，返回报文主体部分。
+
+2. POST:传输实体的主体。主要目的：不是获取响应的主体内容。
+
+3. PUT:传输文件。该方法自身不带验证机制，存在安全问题。
+</code></pre>
+        
+          <a class="article-more-a" href="/2018/08/20/HTTP/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图解HTTP/">图解HTTP</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/20/HTTP/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-2018.7.26分享总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -543,175 +735,6 @@
 
 
   
-    <article id="post-计算机网络（运输层）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/15/计算机网络（运输层）/">计算机网络（运输层）</a>
-    </h1>
-  
-
-        <a href="/2018/03/15/计算机网络（运输层）/" class="archive-article-date">
-  	<time datetime="2018-03-15T06:51:00.745Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>网络层和运输层的区别：网络层是为主机智简提供逻辑通信，而运输层是为应用进程之间提供端到端的逻辑通信。</li>
-<li>TCP/IP运输层的主要协议：</li></ol>
-        
-          <a class="article-more-a" href="/2018/03/15/计算机网络（运输层）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机网络/">计算机网络</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/15/计算机网络（运输层）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-计算机网络(一)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/03/计算机网络(一)/">计算机网络（一）</a>
-    </h1>
-  
-
-        <a href="/2018/03/03/计算机网络(一)/" class="archive-article-date">
-  	<time datetime="2018-03-03T07:36:50.805Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-03</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>交换方式：<br> (1) 电路交换：必须的三个步骤—“创建连接-&gt;通话-&gt;释放连接”；<br><br> 特点：在通话的全部时间内，通话的两个用户始终占用端到端的通信资源，并且线路的传输效率很低。<br><br> (2)分组交换：采用的死存储转发技术，一个分组包括一些必要的控制信息组成的首部和数据组成；分组在各路由器存储转发时需要排队，这会造成时延。【路由器是实现分组交换的关键构件】<br><br> (3)报文交换：整个报文先传送到相邻结点，全部存储下来后查找转发表，转发到下一个结点。<br></li></ol>
-        
-          <a class="article-more-a" href="/2018/03/03/计算机网络(一)/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机网络/">计算机网络</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/03/计算机网络(一)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-初入Vue(一)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/03/初入Vue(一)/">初入Vue(一)</a>
-    </h1>
-  
-
-        <a href="/2018/03/03/初入Vue(一)/" class="archive-article-date">
-  	<time datetime="2018-03-03T07:36:36.715Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-03</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>接上一篇出现的问题，现在基本懂了，因为在vue2中对HTML和body标签做了限制，其具体源码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1.src/entries/web-runtime-with-compiler.js</span><br><span class="line"></span><br><span class="line">el = el &amp;&amp; query(el)</span><br><span class="line"></span><br><span class="line">  /* istanbul ignore if */</span><br><span class="line">  if (el === document.body || el === document.documentElement) &#123;</span><br><span class="line">    process.env.NODE_ENV !== &apos;production&apos; &amp;&amp; warn(</span><br><span class="line">      `Do not mount Vue to &lt;html&gt; or &lt;body&gt; - mount to normal elements instead.`</span><br><span class="line">    )</span><br><span class="line">    return this</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/03/初入Vue(一)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -774,11 +797,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">Ajax</a>
+                <a href="javascript:void(0)">图解HTTP</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -786,7 +805,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">Vue</a>
+                <a href="javascript:void(0)">Ajax</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -794,11 +817,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">代码重构</a>
+                <a href="javascript:void(0)">Vue</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">es6</a>
+                <a href="javascript:void(0)">代码重构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -807,6 +830,14 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)">计算机网络</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">深入浅出ES6</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">es6</a>
               </li>
             
             <div class="clearfix"></div>
