@@ -6,22 +6,29 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>初入Vue | Hedy</title>
+  <title>gradle尝鲜 | Hedy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;刚开始接触vue，遇到一个不知道什么问题的问题，百度有人说是js的引入顺序问题，但是我是我引入顺序是正确的，还是没有得到答案。接下来说说问题：">
-<meta name="keywords" content="Vue">
+  <meta name="description" content="基本概念gradle是一种自动构建工具，建立在Ant和Maven的基础上。 主流的构建工具Ant(编译，测试，打包)  --&amp;gt;Maven(依赖管理，发布)  --&amp;gt;Gradle(使用groovy语言，不同于传统的xml文件)">
+<meta name="keywords" content="构建工具">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初入Vue">
-<meta property="og:url" content="http://yoursite.com/2018/02/26/初入vue/index.html">
+<meta property="og:title" content="gradle尝鲜">
+<meta property="og:url" content="http://yoursite.com/2018/11/21/gradle尝鲜/index.html">
 <meta property="og:site_name" content="Hedy">
-<meta property="og:description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;刚开始接触vue，遇到一个不知道什么问题的问题，百度有人说是js的引入顺序问题，但是我是我引入顺序是正确的，还是没有得到答案。接下来说说问题：">
+<meta property="og:description" content="基本概念gradle是一种自动构建工具，建立在Ant和Maven的基础上。 主流的构建工具Ant(编译，测试，打包)  --&amp;gt;Maven(依赖管理，发布)  --&amp;gt;Gradle(使用groovy语言，不同于传统的xml文件)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/vueImg1.png">
-<meta property="og:updated_time" content="2018-03-03T07:28:47.316Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateOne.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateTow.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateThree.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/groovyEasyWriting.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/groovyEasySpecial.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/groovyHighSpecialOne.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/groovyHighSpecialTow.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/createPackage.png">
+<meta property="og:updated_time" content="2018-11-21T02:08:46.770Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初入Vue">
-<meta name="twitter:description" content="&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;刚开始接触vue，遇到一个不知道什么问题的问题，百度有人说是js的引入顺序问题，但是我是我引入顺序是正确的，还是没有得到答案。接下来说说问题：">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/hdddddd/image/master/vueImg1.png">
+<meta name="twitter:title" content="gradle尝鲜">
+<meta name="twitter:description" content="基本概念gradle是一种自动构建工具，建立在Ant和Maven的基础上。 主流的构建工具Ant(编译，测试，打包)  --&amp;gt;Maven(依赖管理，发布)  --&amp;gt;Gradle(使用groovy语言，不同于传统的xml文件)">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateOne.png">
   
     <link rel="alternative" href="/atom.xml" title="Hedy" type="application/atom+xml">
   
@@ -147,30 +154,88 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-初入vue" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-gradle尝鲜" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      初入Vue
+      gradle尝鲜
     </h1>
   
 
-        <a href="/2018/02/26/初入vue/" class="archive-article-date">
-  	<time datetime="2018-02-26T03:03:18.918Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-26</time>
+        <a href="/2018/11/21/gradle尝鲜/" class="archive-article-date">
+  	<time datetime="2018-11-21T02:08:31.912Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-21</time>
 </a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&ensp;&ensp;&ensp;&ensp;刚开始接触vue，遇到一个不知道什么问题的问题，百度有人说是js的引入顺序问题，但是我是我引入顺序是正确的，还是没有得到答案。<br>接下来说说问题：<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;../vueBasic/vue.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;body id=&quot;example&quot;&gt;</span><br><span class="line">	&lt;ul &gt;</span><br><span class="line">		&lt;li v-for=&quot;item in items&quot;&gt; &#123;&#123;item.name&#125;&#125; &lt;/li&gt;</span><br><span class="line">	&lt;/ul&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">var demo = new Vue(&#123;</span><br><span class="line">  el: &apos;#example&apos;,</span><br><span class="line">  data: &#123;</span><br><span class="line">    items: [</span><br><span class="line">    	&#123;</span><br><span class="line">    		name:&apos;kuaiche&apos;,</span><br><span class="line">    		tag:1</span><br><span class="line">    	&#125;,</span><br><span class="line">    	&#123;</span><br><span class="line">    		name:&apos;chuzuche&apos;,</span><br><span class="line">    		tag:3</span><br><span class="line">    	&#125;,																	</span><br><span class="line">    	&#123;</span><br><span class="line">    		name:&apos;shunfengche&apos;,</span><br><span class="line">    		tag:2</span><br><span class="line">    	&#125;,</span><br><span class="line">    	&#123;</span><br><span class="line">    		name:&apos;zhuangche&apos;,</span><br><span class="line">    		tag:0</span><br><span class="line">    	&#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
-<p>&ensp;&ensp;&ensp;&ensp;这是所有的代码，运行的时候会发现出现的结果并不是期待的列表顺序结果而是如图所示：</p>
-<p><img src="https://raw.githubusercontent.com/hdddddd/image/master/vueImg1.png" alt="image"></p>
-<p>&ensp;&ensp;&ensp;&ensp;学习vue遇到的第一个坑，目前找到的解决办法是在ul标签外面加一层div，并且设置id即可正常显示，但是现在我不知道为什么。等后面知道了原理再来解释。</p>
-<p>修改后的html代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div id=&quot;example&quot;&gt;</span><br><span class="line">		&lt;ul &gt;</span><br><span class="line">			&lt;li v-for=&quot;item in items&quot;&gt; &#123;&#123;item.name&#125;&#125; &lt;/li&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure></p>
+        <h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><pre><code>gradle是一种自动构建工具，建立在Ant和Maven的基础上。
+</code></pre><h3 id="主流的构建工具"><a href="#主流的构建工具" class="headerlink" title="主流的构建工具"></a>主流的构建工具</h3><pre><code>Ant(编译，测试，打包)  --&gt;Maven(依赖管理，发布)  --&gt;Gradle(使用groovy语言，不同于传统的xml文件)
+</code></pre><a id="more"></a>
+<h3 id="groovy语法基础与高校特性"><a href="#groovy语法基础与高校特性" class="headerlink" title="groovy语法基础与高校特性"></a>groovy语法基础与高校特性</h3><pre><code>基础特性
 
+1.完全兼容Java的语法
+
+2.分号是可选的
+
+3.类、方法默认public
+
+4.编译器自动添加getter/setter
+
+5.属性用点号获取
+
+6.最后一个表达式的值作为返回值，可省略“return”字符串
+
+7.==等同于equals(),不会有空指针异常抛出
+
+高校特性
+
+1.assert语句
+
+2.可选类型定义
+
+3.可选括号
+
+4.字符串
+
+5.集合API
+
+6.闭包
+</code></pre><h3 id="gradle环境安装"><a href="#gradle环境安装" class="headerlink" title="gradle环境安装"></a>gradle环境安装</h3><pre><code>1.安装JDK
+
+2.Gradle官网下载Gradle包
+
+3.配置系统环境变量GRADLE_HOME
+
+4.添加path：%GRADLE_HOME%\bin
+
+5.验证：gradle -v
+</code></pre><h3 id="idea创建gradle项目"><a href="#idea创建gradle项目" class="headerlink" title="idea创建gradle项目"></a>idea创建gradle项目</h3><pre><code>1.创建项目，选择gradle
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateOne.png" alt="grandle项目创建一"></p>
+<pre><code>2.点击下一步，自定义以下两个名称
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateTow.png" alt="gradle项目创建二"></p>
+<pre><code>3.点击下一步，按照以下图片勾选，并把本地的gradle和jvm的路径选中，如下图。
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateThree.png" alt="gradle项目创建三"></p>
+<pre><code>4.输入自定义的项目名称，完成项目创建
+</code></pre><h3 id="groovy语法使用实例"><a href="#groovy语法使用实例" class="headerlink" title="groovy语法使用实例"></a>groovy语法使用实例</h3><pre><code>【注】已创建gradle项目
+
+1.在已创建的gradle项目中点击Tools，按下图选中
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/groovyEasyWriting.png" alt="groovy基础写法"></p>
+<pre><code>2.弹出编码框，并在框中编写一下代码，测试groovy的基础特性
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/groovyEasySpecial.png" alt="groovy基础特征"></p>
+<pre><code>3.同理测试groovy的高效特性
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/groovyHighSpecialOne.png" alt="groovy高级特征一"><br><img src="https://raw.githubusercontent.com/hdddddd/image/master/groovyHighSpecialTow.png" alt="groovy高级特征二"></p>
+<h3 id="构建Jar包和War包"><a href="#构建Jar包和War包" class="headerlink" title="构建Jar包和War包"></a>构建Jar包和War包</h3><pre><code>1.构建Jar包：对已经写好的Java文件进行打包；
+
+2.构建War包：对已经写好的Web文件进行打包；
+
+3.对已写好的Java或Web文件进行下图操作，即可在libs文件夹中生成包文件。
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/createPackage.png" alt="生成包文件"></p>
+<pre><code>4.生成包的位置：libs文件夹里面
+</code></pre>
       
 
       
@@ -201,7 +266,7 @@
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/构建工具/">构建工具</a></li></ul>
 	</div>
 
       
@@ -254,7 +319,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/02/26/初入vue/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/11/21/gradle尝鲜/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -268,18 +333,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/03/03/初入Vue(一)/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          初入Vue(一)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/02/06/代码重构/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">块数据</div>
+    <a href="/2018/08/20/生成器Generators/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">生成器Generators</div>
       <i class="icon-circle-right"></i>
     </a>
   
