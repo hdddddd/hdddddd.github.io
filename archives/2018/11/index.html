@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>计算机网络（数据链路层） | Hedy</title>
+  <title>Archives: 2018/11 | Hedy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="链路： 一个结点到相邻结点的一段物理线路，也被称为物理链路； 数据链路：是物理链路加上一些必要的通信协议，也被称为逻辑链路； 梳理链路层的三个基本问题：(1) 封装成帧；(2) 透明传输；(3) 差错检测；">
-<meta name="keywords" content="计算机网络">
-<meta property="og:type" content="article">
-<meta property="og:title" content="计算机网络（数据链路层）">
-<meta property="og:url" content="http://yoursite.com/2018/03/15/计算机网络（数据链路层）/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hedy">
+<meta property="og:url" content="http://yoursite.com/archives/2018/11/index.html">
 <meta property="og:site_name" content="Hedy">
-<meta property="og:description" content="链路： 一个结点到相邻结点的一段物理线路，也被称为物理链路； 数据链路：是物理链路加上一些必要的通信协议，也被称为逻辑链路； 梳理链路层的三个基本问题：(1) 封装成帧；(2) 透明传输；(3) 差错检测；">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-15T06:55:24.100Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="计算机网络（数据链路层）">
-<meta name="twitter:description" content="链路： 一个结点到相邻结点的一段物理线路，也被称为物理链路； 数据链路：是物理链路加上一些必要的通信协议，也被称为逻辑链路； 梳理链路层的三个基本问题：(1) 封装成帧；(2) 透明传输；(3) 差错检测；">
+<meta name="twitter:title" content="Hedy">
   
     <link rel="alternative" href="/atom.xml" title="Hedy" type="application/atom+xml">
   
@@ -145,158 +140,54 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-计算机网络（数据链路层）" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      计算机网络（数据链路层）
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/11/20/gradle尝鲜/" class="archive-article-date">
+  	<time datetime="2018-11-20T14:09:59.266Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-20</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/11/20/gradle尝鲜/">gradle尝鲜</a>
     </h1>
   
 
-        <a href="/2018/03/15/计算机网络（数据链路层）/" class="archive-article-date">
-  	<time datetime="2018-03-15T06:51:40.337Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>链路： 一个结点到相邻结点的一段物理线路，也被称为物理链路；</li>
-<li>数据链路：是物理链路加上一些必要的通信协议，也被称为逻辑链路；</li>
-<li>梳理链路层的三个基本问题：<br><br>(1) 封装成帧；<br>(2) 透明传输；<br>(3) 差错检测；<a id="more"></a></li>
-<li>点对点协议（ppp）:<br><br>(1) 组成：<br><pre><code>①：将ip数据报封装到串行链路的方法；&lt;br&gt;
-②：用来建立、配置和测试链路连接的链路控制协议LCP；&lt;br&gt;
-③：一套网络控制协议NCP;
-</code></pre></li>
-<li>共享信道技术：<br><br> (1) 静态划分信道：用户只要分配到信道就不会和其他用户发生冲突。<br><br> (2) 动态媒体接入控制(多点接入):信道不在用户通信时固定分配，分配方式以下两种：①：随机接入：用户可随机发送信息，会产生碰撞（冲突），所以必须有解决碰撞（冲突）的网络协议；②：受控接入：用户不能随机的发送信息而必须服从一定的控制。</li>
-<li>CSMA/CD协议要点：<br> (1) 多点接入：计算机以多点接入的方式连接在一根总线上。协议的实质是“载波监听” 和 “碰撞检测”；<br><br> (2) 载波监听：即检测信道，不管发送前还是发送中，每个站都必须不停的检测信道。<br> 【注】工作过程：①:先听后发；②：边发边听；③：冲突回退；④：候时重发<br></li>
-<li>使用网桥的优缺点：<br> (1) 优点：<br><br> ①：过滤通信量，增大吞吐量；<br><br> ②：扩大了物理范围；<br><br> ③：提高可靠性；<br><br> ④：可互连不同物理层，不同MAC子层和不同速率。<br><br> (2) 缺点：<br><br> ①：增加了时延；<br><br> ②：在MAC子层没有流量控制功能；<br><br> ③：网桥只适合用户数不多和通信量不太大的以太网，这就是所谓的广播风暴。<br></li>
-<li>循环冗余检验CRC是一种检错方法，而帧检验序列FCS是添加在数据后面的冗余码。</li>
-</ol>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机网络/">计算机网络</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gradle/">gradle</a></li></ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/03/15/计算机网络（数据链路层）/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2018/03/15/计算机网络(物理层)/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          计算机网络（物理层）
-        
-      </div>
-    </a>
   
   
-    <a href="/2018/03/15/计算机网络（网络层）/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">计算机网络（网络层）</div>
-      <i class="icon-circle-right"></i>
-    </a>
+    </div></section>
   
-</nav>
 
-
-
-
-
-
-
+    
 
 
           </div>
@@ -319,8 +210,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
@@ -350,11 +241,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">分享总结</a>
+                <a href="javascript:void(0)">图解HTTP</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">图解HTTP</a>
+                <a href="javascript:void(0)">分享总结</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -362,19 +253,11 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)">shu</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)">Ajax</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">Vue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -382,7 +265,19 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">shu</a>
+                <a href="javascript:void(0)">Vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">es6</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -394,7 +289,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">es6</a>
+                <a href="javascript:void(0)">构建工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">gradle</a>
               </li>
             
             <div class="clearfix"></div>

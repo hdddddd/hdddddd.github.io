@@ -6,20 +6,29 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>计算机网络（一） | Hedy</title>
+  <title>gradle尝鲜 | Hedy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="交换方式： (1) 电路交换：必须的三个步骤—“创建连接-&amp;gt;通话-&amp;gt;释放连接”； 特点：在通话的全部时间内，通话的两个用户始终占用端到端的通信资源，并且线路的传输效率很低。 (2)分组交换：采用的死存储转发技术，一个分组包括一些必要的控制信息组成的首部和数据组成；分组在各路由器存储转发时需要排队，这会造成时延。【路由器是实现分组交换的关键构件】 (3)报文交换：整个报文先传送到相邻结">
-<meta name="keywords" content="计算机网络">
+  <meta name="description" content="基本概念gradle是一种自动构建工具，建立在Ant和Maven的基础上。 主流的构建工具Ant(编译，测试，打包)  --&amp;gt;Maven(依赖管理，发布)  --&amp;gt;Gradle(使用groovy语言，不同于传统的xml文件)">
+<meta name="keywords" content="gradle">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机网络（一）">
-<meta property="og:url" content="http://yoursite.com/2018/03/03/计算机网络(一)/index.html">
+<meta property="og:title" content="gradle尝鲜">
+<meta property="og:url" content="http://yoursite.com/2018/11/20/gradle尝鲜/index.html">
 <meta property="og:site_name" content="Hedy">
-<meta property="og:description" content="交换方式： (1) 电路交换：必须的三个步骤—“创建连接-&amp;gt;通话-&amp;gt;释放连接”； 特点：在通话的全部时间内，通话的两个用户始终占用端到端的通信资源，并且线路的传输效率很低。 (2)分组交换：采用的死存储转发技术，一个分组包括一些必要的控制信息组成的首部和数据组成；分组在各路由器存储转发时需要排队，这会造成时延。【路由器是实现分组交换的关键构件】 (3)报文交换：整个报文先传送到相邻结">
+<meta property="og:description" content="基本概念gradle是一种自动构建工具，建立在Ant和Maven的基础上。 主流的构建工具Ant(编译，测试，打包)  --&amp;gt;Maven(依赖管理，发布)  --&amp;gt;Gradle(使用groovy语言，不同于传统的xml文件)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-03T07:38:52.060Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateOne.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateTow.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateThree.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/groovyEasyWriting.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/groovyEasySpecial.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/groovyHighSpecialOne.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/groovyHighSpecialTow.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hdddddd/image/master/createPackage.png">
+<meta property="og:updated_time" content="2018-11-20T14:10:14.923Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="计算机网络（一）">
-<meta name="twitter:description" content="交换方式： (1) 电路交换：必须的三个步骤—“创建连接-&amp;gt;通话-&amp;gt;释放连接”； 特点：在通话的全部时间内，通话的两个用户始终占用端到端的通信资源，并且线路的传输效率很低。 (2)分组交换：采用的死存储转发技术，一个分组包括一些必要的控制信息组成的首部和数据组成；分组在各路由器存储转发时需要排队，这会造成时延。【路由器是实现分组交换的关键构件】 (3)报文交换：整个报文先传送到相邻结">
+<meta name="twitter:title" content="gradle尝鲜">
+<meta name="twitter:description" content="基本概念gradle是一种自动构建工具，建立在Ant和Maven的基础上。 主流的构建工具Ant(编译，测试，打包)  --&amp;gt;Maven(依赖管理，发布)  --&amp;gt;Gradle(使用groovy语言，不同于传统的xml文件)">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateOne.png">
   
     <link rel="alternative" href="/atom.xml" title="Hedy" type="application/atom+xml">
   
@@ -145,34 +154,88 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-计算机网络(一)" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-gradle尝鲜" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      计算机网络（一）
+      gradle尝鲜
     </h1>
   
 
-        <a href="/2018/03/03/计算机网络(一)/" class="archive-article-date">
-  	<time datetime="2018-03-03T07:36:50.805Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-03</time>
+        <a href="/2018/11/20/gradle尝鲜/" class="archive-article-date">
+  	<time datetime="2018-11-20T14:09:59.266Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-20</time>
 </a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li>交换方式：<br> (1) 电路交换：必须的三个步骤—“创建连接-&gt;通话-&gt;释放连接”；<br><br> 特点：在通话的全部时间内，通话的两个用户始终占用端到端的通信资源，并且线路的传输效率很低。<br><br> (2)分组交换：采用的死存储转发技术，一个分组包括一些必要的控制信息组成的首部和数据组成；分组在各路由器存储转发时需要排队，这会造成时延。【路由器是实现分组交换的关键构件】<br><br> (3)报文交换：整个报文先传送到相邻结点，全部存储下来后查找转发表，转发到下一个结点。<br><a id="more"></a></li>
-<li>通信方式：<br><br> (1)客户-服务器方式（C/S方式）和对等方式（P2P方式）<br></li>
-<li>计算机网络的种类<br><br> 按作用范围分类：<br><br> (1)广域网WAN<br><br> (2)城域网MAN<br><br> (3)局域网LAN<br><br> (4)个人区域网PAN<br><br> 按网络的使用者分类：<br><br> (1)公用网<br><br> (2)专用网<br></li>
-<li>计算机网络的性能指标<br><br> (1)速率：比特（bit）是及三级中数据量的单位，也是信息论中的信息量的单位；速率是指连接在计算机网络上的主机在数字信道上传送数据的速率；<br><br> (2)带宽：本意指某个信号具有的频带宽度，即表示通信线路允许通过的信号频带范围。但是在计算机网络中，表示网络的通信线路传送数据的能力，即表示在的单位时间内从网络中的某一点到另一点所能通过的“最高数据率”。<br><br> (3)吞吐量：表示在单位时间内通过某个网络（信道、接口）的数据量。<br> (4)时延：指数据从网络的一端传送到另一端所需的时间，分为以下几个部分：<br>① 发送时延：主机或路由器发送数据帧所需要的时间，计算公式：<br><br> 发送时延=数据帧长度(b) / 发送速率(b/s)【注：发送速率即带宽】。<br><br> ② 传播时延：电磁波在信道中传播一定的距离需要花费时间，公式如下：<br> 传播时延=信道长度(m) / 电磁波在信道上的传播速率(m/s)<br><br> ③ 处理时延<br><br> ④ 排队时延<br><br> 总时延 = 发送时延 + 传播时延 + 处理时延 + 排队时延<br><br> (5)传播时延带宽积：<br> 传播时延带宽积 = 传播时延 * 带宽<br><br> (6)往返时间RTT<br> RTT = 中间结点的处理时延 + 排队时延 + 转发数据时发送时延<br><br> (7)利用率：信道或网络利用率过高会产生非常大的时延<br></li>
-<li>网络协议：为进行网络中的数据交换而建立的规则、标准或约定，由以下3部分组成：<br>  (1) 语法：数据与控制信息的结构或格式<br>  (2) 语义：需要发出何种控制信息，完成何种动作以及做出何种响应<br>  (3) 同步：事件实现顺序的详细说明</li>
-<li>协议的体系结构<br> (1)OSI的7层协议体系结构：①物理层；②数据链路层；③网络层(IP层)；④运输层；⑤会话层；⑥表示层；⑦应用层<br><br> (2)TCP/IP的体系结构：①网络接口层；②网际层IP；③运输层TCP/UDP；④应用层<br><br> (3)5层协议的体系结构：①物理层；②数据链路层；③网络层；④运输层；⑤应用层</li>
-<li>运输层主要使用以下两种协议：<br> (1)传输控制协议TCP — 提供面向连接的，可靠的数据传输协议，其数据传输的单位是报文段。<br> (2)用户数据报协议UDP — 提供无连接的，尽最大努力的数据传输服务（不可靠），数据传输单位是用户数据报。</li>
-</ol>
+        <h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><pre><code>gradle是一种自动构建工具，建立在Ant和Maven的基础上。
+</code></pre><h3 id="主流的构建工具"><a href="#主流的构建工具" class="headerlink" title="主流的构建工具"></a>主流的构建工具</h3><pre><code>Ant(编译，测试，打包)  --&gt;Maven(依赖管理，发布)  --&gt;Gradle(使用groovy语言，不同于传统的xml文件)
+</code></pre><a id="more"></a>
+<h3 id="groovy语法基础与高校特性"><a href="#groovy语法基础与高校特性" class="headerlink" title="groovy语法基础与高校特性"></a>groovy语法基础与高校特性</h3><pre><code>基础特性
 
+1.完全兼容Java的语法
+
+2.分号是可选的
+
+3.类、方法默认public
+
+4.编译器自动添加getter/setter
+
+5.属性用点号获取
+
+6.最后一个表达式的值作为返回值，可省略“return”字符串
+
+7.==等同于equals(),不会有空指针异常抛出
+
+高校特性
+
+1.assert语句
+
+2.可选类型定义
+
+3.可选括号
+
+4.字符串
+
+5.集合API
+
+6.闭包
+</code></pre><h3 id="gradle环境安装"><a href="#gradle环境安装" class="headerlink" title="gradle环境安装"></a>gradle环境安装</h3><pre><code>1.安装JDK
+
+2.Gradle官网下载Gradle包
+
+3.配置系统环境变量GRADLE_HOME
+
+4.添加path：%GRADLE_HOME%\bin
+
+5.验证：gradle -v
+</code></pre><h3 id="idea创建gradle项目"><a href="#idea创建gradle项目" class="headerlink" title="idea创建gradle项目"></a>idea创建gradle项目</h3><pre><code>1.创建项目，选择gradle
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateOne.png" alt="grandle项目创建一"></p>
+<pre><code>2.点击下一步，自定义以下两个名称
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateTow.png" alt="gradle项目创建二"></p>
+<pre><code>3.点击下一步，按照以下图片勾选，并把本地的gradle和jvm的路径选中，如下图。
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/gradleProjectCreateThree.png" alt="gradle项目创建三"></p>
+<pre><code>4.输入自定义的项目名称，完成项目创建
+</code></pre><h3 id="groovy语法使用实例"><a href="#groovy语法使用实例" class="headerlink" title="groovy语法使用实例"></a>groovy语法使用实例</h3><pre><code>【注】已创建gradle项目
+
+1.在已创建的gradle项目中点击Tools，按下图选中
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/groovyEasyWriting.png" alt="groovy基础写法"></p>
+<pre><code>2.弹出编码框，并在框中编写一下代码，测试groovy的基础特性
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/groovyEasySpecial.png" alt="groovy基础特征"></p>
+<pre><code>3.同理测试groovy的高效特性
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/groovyHighSpecialOne.png" alt="groovy高级特征一"><br><img src="https://raw.githubusercontent.com/hdddddd/image/master/groovyHighSpecialTow.png" alt="groovy高级特征二"></p>
+<h3 id="构建Jar包和War包"><a href="#构建Jar包和War包" class="headerlink" title="构建Jar包和War包"></a>构建Jar包和War包</h3><pre><code>1.构建Jar包：对已经写好的Java文件进行打包；
+
+2.构建War包：对已经写好的Web文件进行打包；
+
+3.对已写好的Java或Web文件进行下图操作，即可在libs文件夹中生成包文件。
+</code></pre><p><img src="https://raw.githubusercontent.com/hdddddd/image/master/createPackage.png" alt="生成包文件"></p>
+<pre><code>4.生成包的位置：libs文件夹里面
+</code></pre>
       
 
       
@@ -203,7 +266,7 @@
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机网络/">计算机网络</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gradle/">gradle</a></li></ul>
 	</div>
 
       
@@ -256,7 +319,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/03/03/计算机网络(一)/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/11/20/gradle尝鲜/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -270,18 +333,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/03/15/计算机网络（运输层）/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          计算机网络（运输层）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/03/03/初入Vue(一)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">初入Vue(一)</div>
+    <a href="/2018/08/20/生成器Generators/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">生成器Generators</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -346,11 +400,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">分享总结</a>
+                <a href="javascript:void(0)">图解HTTP</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">图解HTTP</a>
+                <a href="javascript:void(0)">分享总结</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -358,19 +412,11 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)">shu</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)">Ajax</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)">Vue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -378,7 +424,19 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">shu</a>
+                <a href="javascript:void(0)">Vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">es6</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -390,7 +448,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">es6</a>
+                <a href="javascript:void(0)">构建工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">gradle</a>
               </li>
             
             <div class="clearfix"></div>
