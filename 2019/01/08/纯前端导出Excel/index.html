@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Hedy">
 <meta property="og:description" content="需求前提导师提出一个需求实现一个交叉表的展示。简单的说就是在一个excel表格中有一部分主要的列，还有一部分列是不确定的，可能只有一列，也可能有很多列，并且这些数据的样式是可以通过配置去渲染，因此对于这个样式以及数据等等都是动态的。当前台获取到后台的数据的时候，对该数据做了一些格式的转换，并且对表格的样式进行了渲染，所以，如果此时在把表格数据传回后台去做导出，不管是数据还是样式都不太方便，因此，提">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-08T08:11:11.480Z">
+<meta property="og:updated_time" content="2019-01-08T08:19:06.473Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="纯前端导出Excel">
 <meta name="twitter:description" content="需求前提导师提出一个需求实现一个交叉表的展示。简单的说就是在一个excel表格中有一部分主要的列，还有一部分列是不确定的，可能只有一列，也可能有很多列，并且这些数据的样式是可以通过配置去渲染，因此对于这个样式以及数据等等都是动态的。当前台获取到后台的数据的时候，对该数据做了一些格式的转换，并且对表格的样式进行了渲染，所以，如果此时在把表格数据传回后台去做导出，不管是数据还是样式都不太方便，因此，提">
@@ -157,200 +157,14 @@
   
 
         <a href="/2019/01/08/纯前端导出Excel/" class="archive-article-date">
-  	<time datetime="2019-01-08T07:46:10.064Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-08</time>
+  	<time datetime="2019-01-08T08:18:53.949Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-08</time>
 </a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="需求前提"><a href="#需求前提" class="headerlink" title="需求前提"></a>需求前提</h2><p>导师提出一个需求实现一个交叉表的展示。简单的说就是在一个excel表格中有一部分主要的列，还有一部分列是不确定的，可能只有一列，也可能有很多列，并且这些数据的样式是可以通过配置去渲染，因此对于这个样式以及数据等等都是动态的。当前台获取到后台的数据的时候，对该数据做了一些格式的转换，并且对表格的样式进行了渲染，所以，如果此时在把表格数据传回后台去做导出，不管是数据还是样式都不太方便，因此，提出了一个前端直接导出Excel的需求。</p>
-<p>刚开始没有任何的头绪，后来在找资料的过程中发现了一个叫做js-xlsx的插件（<a href="https://github.com/SheetJS/js-xlsx" target="_blank" rel="noopener">插件的github地址</a>），当然仅仅用这一个插件是不能实现导出的，它必须配合fileSaver才能实现导出，之前也提到说要对表格的样式进行相应的渲染，然而在js-xlsx的api中并没有给出相应的功能，因此，此时还需要用到一个插件叫做xlsx-style,通过这个插件可以给表格设置相应的样式，具体样式如下表所示：<br><a id="more"></a></p>
-<table>
-<thead>
-<tr>
-<th>样式属性</th>
-<th style="text-align:center">子属性</th>
-<th style="text-align:center">取值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>fill</td>
-<td style="text-align:center">patternType</td>
-<td style="text-align:center">“solid” or “none”</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">fgColor</td>
-<td style="text-align:center">COLOR_SPEC</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">bgColor</td>
-<td style="text-align:center">COLOR_SPEC</td>
-</tr>
-<tr>
-<td>font</td>
-<td style="text-align:center">name</td>
-<td style="text-align:center">“Calibri” // default</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">sz</td>
-<td style="text-align:center">“11” // font size in points</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">color</td>
-<td style="text-align:center">COLOR_SPEC</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">bold</td>
-<td style="text-align:center">true or false</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">underline</td>
-<td style="text-align:center">true or false</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">italic</td>
-<td style="text-align:center">true or false</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">strike</td>
-<td style="text-align:center">true or false</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">outline</td>
-<td style="text-align:center">true or false</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">shadow</td>
-<td style="text-align:center">true or false</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">vertAlign</td>
-<td style="text-align:center">true or false</td>
-</tr>
-<tr>
-<td>numFmt</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">“0”</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">“0.00%”</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">“0.0%”</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">“0.00%;\(0.00%\);\-;@”</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">“m/dd/yy”</td>
-</tr>
-<tr>
-<td>alignment</td>
-<td style="text-align:center">vertical</td>
-<td style="text-align:center">“bottom” or “center” or “top”</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">horizontal</td>
-<td style="text-align:center">“bottom” or “center” or “top”</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">wrapText</td>
-<td style="text-align:center">true or false</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">readingOrder</td>
-<td style="text-align:center">2 // for right-to-left</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">textRotation</td>
-<td style="text-align:center">Number from 0 to 180 or 255 (default is 0)</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">90 is rotated up 90 degrees</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">45 is rotated up 45 degrees</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">135 is rotated down 45 degrees</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">180 is rotated down 180 degrees</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">255 is special, aligned vertically</td>
-</tr>
-<tr>
-<td>border</td>
-<td style="text-align:center">top</td>
-<td style="text-align:center">{ style: BORDER_STYLE, color: COLOR_SPEC }</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">bottom</td>
-<td style="text-align:center">{ style: BORDER_STYLE, color: COLOR_SPEC }</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">left</td>
-<td style="text-align:center">{ style: BORDER_STYLE, color: COLOR_SPEC }</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">right</td>
-<td style="text-align:center">{ style: BORDER_STYLE, color: COLOR_SPEC }</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">diagonal</td>
-<td style="text-align:center">{ style: BORDER_STYLE, color: COLOR_SPEC }</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">diagonalUp</td>
-<td style="text-align:center">true or false</td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align:center">diagonalDown</td>
-<td style="text-align:center">true or false</td>
-</tr>
-</tbody>
-</table>
+<p>刚开始没有任何的头绪，后来在找资料的过程中发现了一个叫做js-xlsx的插件（<a href="https://github.com/SheetJS/js-xlsx" target="_blank" rel="noopener">插件的github地址</a>），当然仅仅用这一个插件是不能实现导出的，它必须配合fileSaver才能实现导出，之前也提到说要对表格的样式进行相应的渲染，然而在js-xlsx的api中并没有给出相应的功能，因此，此时还需要用到一个插件叫做xlsx-style,通过这个插件可以给表格设置相应的样式，具体样式如下表所示：<br><a id="more"></a><br>| 样式属性    | 子属性   |  取值  |<br>|——–     |:—–:    |:—-:|<br>| fill     | patternType |   “solid” or “none” |<br>|          | fgColor |   COLOR_SPEC |<br>|          | bgColor |   COLOR_SPEC |<br>| font        |   name   |   “Calibri” // default  |<br>|             |   sz   |   “11” // font size in points  |<br>|             |   color   |   COLOR_SPEC  |<br>|             |   bold   |   true or false  |<br>|             |   underline   |   true or false  |<br>|             |   italic   |   true or false  |<br>|             |   strike   |   true or false  |<br>|             |   outline   |   true or false  |<br>|             |   shadow   |   true or false  |<br>|             |   vertAlign   |   true or false  |<br>| numFmt        |        |  “0”   |<br>|         |        |  “0.00%”   |<br>|         |        |  “0.0%”   |<br>|         |        |  “0.00%;\(0.00%\);\-;@”   |<br>|         |        |  “m/dd/yy”   |<br>| alignment  |    vertical    | “bottom” or “center” or “top”   |<br>|            |    horizontal    | “bottom” or “center” or “top”   |<br>|            |    wrapText    | true or false   |<br>|            |    readingOrder    | 2 // for right-to-left   |<br>|  |  textRotation | Number from 0 to 180 or 255 (default is 0)|<br>|  |   | 90 is rotated up 90 degrees|<br>|  |   | 45 is rotated up 45 degrees|<br>|  |   | 135 is rotated down 45 degrees|<br>|  |   | 180 is rotated down 180 degrees|<br>|  |   | 255 is special, aligned vertically|<br>| border  |    top    | { style: BORDER_STYLE, color: COLOR_SPEC }|<br>|   |    bottom    | { style: BORDER_STYLE, color: COLOR_SPEC }|<br>|   |    left    | { style: BORDER_STYLE, color: COLOR_SPEC }|<br>|   |    right    | { style: BORDER_STYLE, color: COLOR_SPEC }|<br>|   |    diagonal    | { style: BORDER_STYLE, color: COLOR_SPEC }|<br>|   |    diagonalUp  | true or false|<br>|   |    diagonalDown  | true or false|</p>
 <p>上表就是整个excel支持的全部样式。</p>
 <h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><ol>
 <li>首先我是基于vue去实现的，因此我首先是需要下载依赖，分别下载依赖是xlsx、fileSaver、xlsx-style。</li>
@@ -575,11 +389,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">前端技术</a>
+                <a href="javascript:void(0)">计算机网络</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">计算机网络</a>
+                <a href="javascript:void(0)">前端技术</a>
               </li>
             
             <div class="clearfix"></div>
