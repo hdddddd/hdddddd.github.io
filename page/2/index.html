@@ -142,6 +142,60 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-初入Vue(一)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/03/初入Vue(一)/">初入Vue(一)</a>
+    </h1>
+  
+
+        <a href="/2018/03/03/初入Vue(一)/" class="archive-article-date">
+  	<time datetime="2018-03-03T07:36:36.715Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-03</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>接上一篇出现的问题，现在基本懂了，因为在vue2中对HTML和body标签做了限制，其具体源码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1.src/entries/web-runtime-with-compiler.js</span><br><span class="line"></span><br><span class="line">el = el &amp;&amp; query(el)</span><br><span class="line"></span><br><span class="line">  /* istanbul ignore if */</span><br><span class="line">  if (el === document.body || el === document.documentElement) &#123;</span><br><span class="line">    process.env.NODE_ENV !== &apos;production&apos; &amp;&amp; warn(</span><br><span class="line">      `Do not mount Vue to &lt;html&gt; or &lt;body&gt; - mount to normal elements instead.`</span><br><span class="line">    )</span><br><span class="line">    return this</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/03/初入Vue(一)/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-初入vue" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -545,7 +599,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 Hedy
+    		&copy; 2019 Hedy
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -589,11 +643,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">CSS</a>
+                <a href="javascript:void(0)">分享总结</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">分享总结</a>
+                <a href="javascript:void(0)">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -629,15 +683,19 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">深入浅出ES6</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)">es6</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)">前端技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)">计算机网络</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)">深入浅出ES6</a>
               </li>
             
             <div class="clearfix"></div>
