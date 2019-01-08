@@ -142,6 +142,58 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-纯前端导出Excel (1)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/08/纯前端导出Excel (1)/">纯前端导出Excel</a>
+    </h1>
+  
+
+        <a href="/2019/01/08/纯前端导出Excel (1)/" class="archive-article-date">
+  	<time datetime="2019-01-08T08:31:45.657Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-08</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="需求前提"><a href="#需求前提" class="headerlink" title="需求前提"></a>需求前提</h2><p>导师提出一个需求实现一个交叉表的展示。简单的说就是在一个excel表格中有一部分主要的列，还有一部分列是不确定的，可能只有一列，也可能有很多列，并且这些数据的样式是可以通过配置去渲染，因此对于这个样式以及数据等等都是动态的。当前台获取到后台的数据的时候，对该数据做了一些格式的转换，并且对表格的样式进行了渲染，所以，如果此时在把表格数据传回后台去做导出，不管是数据还是样式都不太方便，因此，提出了一个前端直接导出Excel的需求。</p>
+<p>刚开始没有任何的头绪，后来在找资料的过程中发现了一个叫做js-xlsx的插件（<a href="https://github.com/SheetJS/js-xlsx" target="_blank" rel="noopener">插件的github地址</a>），当然仅仅用这一个插件是不能实现导出的，它必须配合fileSaver才能实现导出，之前也提到说要对表格的样式进行相应的渲染，然而在js-xlsx的api中并没有给出相应的功能，因此，此时还需要用到一个插件叫做xlsx-style,通过这个插件可以给表格设置相应的样式，具体样式如下表所示：</p>
+        
+          <a class="article-more-a" href="/2019/01/08/纯前端导出Excel (1)/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/01/08/纯前端导出Excel (1)/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-纯前端导出Excel" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -154,14 +206,14 @@
   
 
         <a href="/2019/01/08/纯前端导出Excel/" class="archive-article-date">
-  	<time datetime="2019-01-08T08:25:54.481Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-08</time>
+  	<time datetime="2019-01-08T08:31:45.657Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-08</time>
 </a>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="需求前提"><a href="#需求前提" class="headerlink" title="需求前提"></a>需求前提</h2><p>导师提出一个需求实现一个交叉表的展示。简单的说就是在一个excel表格中有一部分主要的列，还有一部分列是不确定的，可能只有一列，也可能有很多列，并且这些数据的样式是可以通过配置去渲染，因此对于这个样式以及数据等等都是动态的。当前台获取到后台的数据的时候，对该数据做了一些格式的转换，并且对表格的样式进行了渲染，所以，如果此时在把表格数据传回后台去做导出，不管是数据还是样式都不太方便，因此，提出了一个前端直接导出Excel的需求。</p>
-<p>刚开始没有任何的头绪，后来在找资料的过程中发现了一个叫做js-xlsx的插件（<a href="https://github.com/SheetJS/js-xlsx" target="_blank" rel="noopener">插件的github地址</a>），当然仅仅用这一个插件是不能实现导出的，它必须配合fileSaver才能实现导出，之前也提到说要对表格的样式进行相应的渲染，然而在js-xlsx的api中并没有给出相应的功能，因此，此时还需要用到一个插件叫做xlsx-style,通过这个插件可以给表格设置相应的样式，具体样式如下表所示：<br></p>
+<p>刚开始没有任何的头绪，后来在找资料的过程中发现了一个叫做js-xlsx的插件（<a href="https://github.com/SheetJS/js-xlsx" target="_blank" rel="noopener">插件的github地址</a>），当然仅仅用这一个插件是不能实现导出的，它必须配合fileSaver才能实现导出，之前也提到说要对表格的样式进行相应的渲染，然而在js-xlsx的api中并没有给出相应的功能，因此，此时还需要用到一个插件叫做xlsx-style,通过这个插件可以给表格设置相应的样式，具体样式如下表所示：</p>
         
           <a class="article-more-a" href="/2019/01/08/纯前端导出Excel/#more">more >></a>
         
@@ -676,63 +728,6 @@
 
 
   
-    <article id="post-计算机网络（网络层）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/15/计算机网络（网络层）/">计算机网络（网络层）</a>
-    </h1>
-  
-
-        <a href="/2018/03/15/计算机网络（网络层）/" class="archive-article-date">
-  	<time datetime="2018-03-15T06:51:19.469Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>网际协议IP是TCP/IP体系中最主要协议之一，以IP协议配套使用的三个协议：<br>①：地址解析协议ARP;<br>②：网际控制报文协议ICMP；<br>③：网际组管理协议IGMP;<br></li></ol>
-        
-          <a class="article-more-a" href="/2018/03/15/计算机网络（网络层）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机网络/">计算机网络</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/15/计算机网络（网络层）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -791,11 +786,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">CSS</a>
+                <a href="javascript:void(0)">分享总结</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)">分享总结</a>
+                <a href="javascript:void(0)">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
